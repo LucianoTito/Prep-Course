@@ -1,43 +1,107 @@
-![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
+# HENRY CHALLENGE - JavaScript
 
-# Henry Challenge
+### Bienvenido al Henry Challenge sobre JavaScript para la carrera Full Stack Developer.
 
-¡Felicitaciones, llegaste a la última etapa del proceso de admisión: realizar el Henry Challenge!
+<p style="color:#f92850; font-size: 16px; text-align:center;">¡ Por favor lee TODO este material con atención !</p>
 
-## ¿Qué es el Henry Challenge?
+## INTRODUCCION
 
-El Challenge es un examen donde evaluamos todos los conceptos aprendidos en el Prep Course.
+El Henry Challenge es un desafío técnico donde evaluamos conceptos básicos sobre JavaScript.
+En esta instancia, buscamos asegurarnos que todos nuestros aplicantes  tengan una base de conocimientos mínimos necesarios para luego seguir aprendiendo temas nuevos.
 
-Consiste en una serie de ejercicios que deberás resolver, de manera muy similar a cómo resolviste los homeworks del Prep Course.
+Hay cosas puntuales que tal vez no vimos específicamente en el material del Prep Course, vas a tener que investigar un poquito por tu cuenta (Google es tu mejor amigo 🤗).
 
-## ¿Cuándo lo puedo realizar?
+>El Challenge debe resolverse de manera individual. Si te copias o recibes ayuda de compañeros, además de estar incumpliendo con las normas de Henry (lo que te dejaría afuera de la carrera), estarás perjudicándote a ti mismo, porque el primer día de clase estarías extremadamente perdido.
 
-El challenge se realiza los sábados, cada dos semanas.
+¿Se puede volver a rendir el HC?    
+-   Si, el HC se puede rendir tantas veces como ustedes quieran! No hay límite de intentos.
 
-El challenge debe resolverse de manera individual. Si lo realizas con ayuda te estarás perjudicando a ti mismo, dado que si no puedes resolverlo significa que aún no tienes los conocimientos básicos para ingresar y eso te generará muchos problemas durante la carrera.
+¿Qué hago una vez entregado el HC?
+- ¡A esperar! Los van a estar contactando en un plazo no mayor a una semana para confirmarles, tanto si quedaron, como si no lo hicieron.
 
-## ¿Cómo sigue el proceso?
 
-En caso de aprobar, ya estarás listo para comenzar la carrera. Pasarás a la etapa de "onboarding" donde confirmarás cuándo quieres comenzar la carrera, podrás revisar el Acuerdo de Ingresos compartidos y responderemos todas tus dudas. Si no lo apruebas, podrás volver a intentarlo todas las veces que necesites.
 
-¡Muchos éxitos!
+## PASOS PARA RESOLVER EL CHECKPOINT:
 
-## Inscripción
+### 1. Clonar
 
-La inscripción al Henry Challenge se realiza desde la Admissions Web App: <a href='https://www.admissions.soyhenry.com/' target='_blank'>Challenge</a>
+Vas a recibir un enlace al repo que esta alojado en nuestro github
+`checkpoints-soyhenry` 
 
-<b>¿Qué es la Admissions Web App?</b>
+Una vez que aceptes la invitacion al repo vas a poder clonar lo 
+>Es importante que no hagas Fork, los cambios subidos a un repo fork no seran validos.
 
-Es una pagina que creamos para poder darles visibilidad sobre el estado de sus procesos de admisión.
+Para clonar el repo te recomendamos crear una nueva carpeta,  (asegurate de no utilizar la misma que el prep curse). Una vez clonado entrá a esa carpeta y ejecutá los siguientes comandos:
 
-<b>¿Cómo ingreso a la Admissions App?</b>
+    npm install
+    npm test
 
-Cuando comienzan su proceso de admisión y aplican a la carrera, se crea un usuario para ingresar a la misma.
+>Si ves los tests fallando, estás listo para comenzar, si no lee bien el output para identificar el error.
 
-Luego, si quieren volver a ingresar podrán hacerlo <a href='https://www.admissions.soyhenry.com/' target='_blank'>AQUI</a>.
 
-Quienes comenzaron su proceso de admisión antes de que pusiéramos en producción esta app, ¡no se preocupen! Pueden registrarse ahora por primera vez y, cuando ingresen, ya encontrarán completos todos los pasos que realizaron hasta el momento.
+### 2. RESOLVER EL CHALLENGE
 
----
+Tu tarea es completar el código en los archivos  
+ - `01.js` 
+ - `02.js` 
+ - `03.js` 
+ - `04.js` 
+ - `05.js` 
+ - `06-07-08.js` 
+ - `09.js` 
+ 
+ De tal forma que pasen la mayoría de los tests.
 
-#### Si tienes dudas sobre este tema, puedes consultarlas en el canal ***henry_challenge*** de Slack
+
+### 3. ENTREGAR TU CHECKPOINT
+
+Correr por ultima vez los tests y verificar cuantos pasan. Ten en cuenta que si te aparece "1 failed;1 total" es porque tienes un error de sintaxis: seguramente falta o sobra una llave, paréntesis, punto y coma, etc.
+Saca un print de pantalla de tus tests.
+Luego, debes subir un commit a tu repo. Para hacerlo, debes ejecutar el siguiente comando:
+
+    git add .
+    git commit -m 'checkpoint commit'
+    git push origin main
+
+Una vez finalizado, chequea:
+1. Que veas los cambios reflejados en el repo de la cuenta de `checkpoints-soyhenry` (entrando al link brindado anteriormente.)
+2.  Que no haya un require - solo debe haber codigo dentro de las funciones de cada ejercicio 
+
+
+<img src="https://a.slack-edge.com/production-standard-emoji-assets/13.0/google-medium/26a0-fe0f@2x.png" style="float:left; width:35px; padding: 10px;" /> Atención: no debes realizar un commit después de la hora de entrega porque se anulara la totalidad del examen. 
+>Revisar la hora del entrega del examen en los emails que te llegaron. 
+
+### ¿TENES ALGUN PROBLEMA / CONSULTA?
+
+1. Busca la solución en la "guía de errores comunes".
+
+2. Si no la encuentras, revisa el canal de #henry_challenge en Slack. Probablemente a algún compañero le paso algo similar y ya lo consulto.
+
+3. Si no encuentras la respuesta, puedes publicar un mensaje en dicho canal.
+
+> No se puede hacer consultas sobre la resolucion de los ejercicios.
+
+
+### GUIA DE ERRORES COMUNES
+
+Para identificar el error, vas a tener que leerlo en la consola.
+
+
+* "jest" no se reconoce como un comando externo o interno...:
+    1. Borrar la carpeta `node_modules` y el archivo `package-lock.json` e instalar nuevamente ( `npm install` ).
+    2. Si esto no funciona, instalar test con el comando `npm install jest`.
+
+
+* 1 failed, 1 total:
+    1. Tenes un error de sintaxis. Revisa el último ejercicio que hayas hecho, seguramente falta o sobra una llave, paréntesis, punto y coma, etc.
+
+* Author identity unknown.  
+    1. Intenta ejecutar los siguientes comandos para configurar tu cuenta:
+        * git config --global user.name "Tu usuario de GitHub aca"
+        * git config --global user.email "Tu email aca"
+
+    2. Ingresa a [Github](https://docs.github.com/es/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) y sigue las instrucciones para configurar tu token. 
+
+* La consola se tilda en `Runs`:
+    1. Revisa tu código, tenes un bucle infinito. Tenes que checkear la condición de corte de tus bucles.
+
